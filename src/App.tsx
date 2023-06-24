@@ -1,4 +1,6 @@
-import React from 'react'
+// @ts-ignore
+// eslint-disable-next-line import/no-unresolved
+import App1 from 'app1/App1'
 
 import './App.css'
 
@@ -8,6 +10,9 @@ function App() {
       <header className='App-header'>
         <p>Microfrontend application container.</p>
       </header>
+      <div>
+        <App1 />
+      </div>
     </div>
   )
 }
