@@ -1,6 +1,8 @@
+import { Suspense, lazy } from 'react'
+
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
-import App1 from 'app1/App1'
+const App1 = lazy(() => import('app1/App1'))
 
 import './App.css'
 
@@ -11,7 +13,9 @@ function App() {
         <p>Microfrontend application container.</p>
       </header>
       <div>
-        <App1 />
+        <Suspense fallback={<div>Loading...</div>}>
+          <App1 />
+        </Suspense>
       </div>
     </div>
   )
