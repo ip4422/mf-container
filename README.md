@@ -1,4 +1,4 @@
-# Microfrontend container application
+# Microfrontend container application using CRA and CRACO
 
 ## Description
 
