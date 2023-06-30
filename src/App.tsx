@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>Microfrontend application container.</p>
+        <p>Micro Frontend application container.</p>
       </header>
       <div>
         <Suspense fallback={<div>Loading...</div>}>
