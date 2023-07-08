@@ -1,6 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const { ModuleFederationPlugin } = require('webpack').container
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const packageJson = require('./package.json')
+
 module.exports = {
   mode: 'development',
   devServer: {
@@ -13,7 +16,7 @@ module.exports = {
         remotes: {
           app1: 'app1@http://localhost:3002/remoteEntry.js'
         },
-        shared: ['react', 'react-dom']
+        shared: packageJson.dependencies
       })
     ]
   }

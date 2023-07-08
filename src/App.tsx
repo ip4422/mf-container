@@ -1,12 +1,10 @@
 import { Suspense, lazy } from 'react'
 import { Link, RouterProvider, createBrowserRouter } from 'react-router-dom'
 
-// @ts-ignore
-// eslint-disable-next-line import/no-unresolved
-const App1 = lazy(() => import('app1/App1'))
-
 import './App.css'
 import MainLayoutWrapper from './MainLayoutWrapper'
+
+const MFApp1 = lazy(() => import('./components/MFApp1'))
 
 const router = createBrowserRouter([
   {
@@ -25,7 +23,7 @@ const router = createBrowserRouter([
       <MainLayoutWrapper>
         <div>
           <Suspense fallback={<div>Loading...</div>}>
-            <App1 />
+            <MFApp1 />
           </Suspense>
         </div>
       </MainLayoutWrapper>
