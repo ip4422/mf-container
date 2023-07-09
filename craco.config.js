@@ -18,6 +18,13 @@ module.exports = {
         },
         shared: packageJson.dependencies
       })
-    ]
+    ],
+    configure: {
+      output: {
+        // We have to configure the output dir for routing issues
+        // finalizing slash is important!
+        publicPath: 'http://localhost:3001/'
+      }
+    }
   }
 }
