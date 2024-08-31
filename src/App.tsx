@@ -14,7 +14,7 @@ function App() {
       </header>
       <div>
         <Suspense fallback={<div>Loading...</div>}>
-          <App1 />
+          <App1 settings={'some string'} />
         </Suspense>
       </div>
     </div>
