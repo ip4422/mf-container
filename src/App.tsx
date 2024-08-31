@@ -2,7 +2,7 @@ import { Suspense, lazy } from 'react'
 
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
-const App1 = lazy(() => import('app1/App1'))
+const App1 = lazy(() => import('remoteApp1/App1'))
 
 import './App.css'
 
