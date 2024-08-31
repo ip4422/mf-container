@@ -1,7 +1,6 @@
 const path = require('path')
 const fs = require('fs')
 const dotenv = require('dotenv')
-
 const { ModuleFederationPlugin } = require('webpack').container
 
 // Determine the absolute path to the .env file if it exists
