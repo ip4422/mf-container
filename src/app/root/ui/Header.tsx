@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Header: React.FC = () => {
   return (
@@ -10,8 +10,8 @@ const Header: React.FC = () => {
           </h1>
         </div>
         <div className='space-x-4'>
-          {/* <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link> */}
+          <Link to='/about'>About</Link>
+          <Link to='/contact'>Contact</Link>
         </div>
       </div>
     </header>
