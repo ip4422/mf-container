@@ -1,4 +1,4 @@
-import MfeApp1 from 'app/mfe-applications/MfeApp1'
+import MfeApp1 from 'app/mfe-apps/MfeApp1'
 
 export const HomePage: React.FC = () => {
   return <MfeApp1 />
