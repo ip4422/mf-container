@@ -87,7 +87,9 @@ const sharedModules = Object.keys(deps).reduce((acc, dep) => {
 module.exports = {
   mode: 'development',
   devServer: {
-    port: process.env.REACT_APP_PORTAL_PORT
+    port: process.env.REACT_APP_PORTAL_PORT,
+    hot: true,
+    liveReload: true
   },
   webpack: {
     plugins: [

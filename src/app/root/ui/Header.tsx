@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 
+import { routeNames } from 'app/routes/config'
+
 const Header: React.FC = () => {
   return (
     <header className='bg-white shadow py-4'>
@@ -10,8 +12,9 @@ const Header: React.FC = () => {
           </h1>
         </div>
         <div className='space-x-4'>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
+          <Link to={routeNames.mfeApp1}>mfeApp1</Link>
+          <Link to={routeNames.about}>About</Link>
+          <Link to={routeNames.contact}>Contact</Link>
         </div>
       </div>
     </header>

@@ -1,7 +1,5 @@
-import MfeApp1 from 'app/mfe-apps/MfeApp1'
-
 export const HomePage: React.FC = () => {
-  return <MfeApp1 />
+  return <div>Container HomePage</div>
 }
 
 export default HomePage
