@@ -1,6 +1,8 @@
 import { Suspense, lazy } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import { routeNames } from 'app/routes/config'
+
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
 const App1 = lazy(() => import('remoteApp1/App1'))
@@ -16,7 +18,7 @@ const MfeApp1: React.FC = () => {
           <App1
             settings={{
               idTag,
-              basename: '/',
+              basename: routeNames.mfeApp1,
               parentHomeName: '/',
               parentNavigate: navigate
             }}
