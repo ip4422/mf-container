@@ -19,7 +19,7 @@ const MfeApp1: React.FC = () => {
             settings={{
               idTag,
               basename: routeNames.mfeApp1,
-              parentHomeName: '/',
+              parentHomeRoute: '/',
               parentNavigate: navigate
             }}
           />
